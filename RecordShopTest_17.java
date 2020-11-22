@@ -34,7 +34,7 @@ public class RecordShopTest_17 {
 		Album_17 screamBloodyGore = new Album_17(death, SBG_release, "Scream Bloody Gore", null, 37.51, SBG_songs );
 		deathAlbums.add(screamBloodyGore);
 		
-		Song_17 infernalDeath = new Song_17(2.53, "Infernal Death", screamBloodyGore,infernalDeathLyr);
+		Song_17 infernalDeath = new Song_17(2.53, "Infernal Death", infernalDeathLyr);
 		SBG_songs.add(infernalDeath);
 		
 		Genre_17 deathMetal = new Genre_17("Death metal", death, metalInstruments, screamBloodyGore);
@@ -63,11 +63,10 @@ public class RecordShopTest_17 {
 		
 		System.out.print("\n\n");
 		
-		Copy_17 copySBG = new Copy_17("CD", "SWD83799LW", null, 16.33, screamBloodyGore);
+		Copy_17 copySBG = new Copy_17("CD", "SWD83799LW", 16.33, screamBloodyGore);
 		myCDs.add(copySBG);
 		
 		RecordShop_17 shop = new RecordShop_17("My record shop", null, myCDs, null, "Some Street no. 7774");
-		copySBG.setRecordShop(shop);
 		
 		//copy
 		System.out.println(copySBG.getFormat() + " " + copySBG.getISBN() + 
