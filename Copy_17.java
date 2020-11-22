@@ -6,7 +6,6 @@ import java.util.ArrayList;
 public class Copy_17 {
 	private String format;
 	private String ISBN;
-	private RecordShop_17 recordShop;
 	double price;
 	Album_17 album;
 	
@@ -17,10 +16,9 @@ public class Copy_17 {
 		price = 0;
 	}
 	
-	Copy_17(String format, String ISBN,RecordShop_17 recordShop,double price, Album_17 album ){
+	Copy_17(String format, String ISBN,double price, Album_17 album ){
 		this.format = format;
 		this.ISBN = ISBN;
-		this.setRecordShop(recordShop);
 		this.price = price;
 		this.album = album;
 	}
@@ -57,11 +55,4 @@ public class Copy_17 {
 		return this.album;
 	}
 
-	public RecordShop_17 getRecordShop() {
-		return recordShop;
-	}
-
-	public void setRecordShop(RecordShop_17 recordShop) {
-		this.recordShop = recordShop;
-	}
 }
