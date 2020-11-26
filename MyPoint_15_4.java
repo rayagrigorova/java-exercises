@@ -46,6 +46,7 @@ public class MyPoint_15_4 {
 	
 //	A static method named distance that returns the distance from two MyPoint
 //	objects.
+//
 	public static double distance(MyPoint_15_4 a, MyPoint_15_4 b) {
 		return Math.sqrt(Math.pow(a.getX() - b.getX(), 2) + Math.pow(a.getY() - b.getY(), 2));
 	}
