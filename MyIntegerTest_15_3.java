@@ -24,7 +24,7 @@ public class MyIntegerTest_15_3 {
 		System.out.println(MyInteger_15_3.isOdd(MyInteger_15_3.parseInt(str)));
 		System.out.println(MyInteger_15_3.parseInt(str));
 		
-	
+		//
 		
 	}
 
