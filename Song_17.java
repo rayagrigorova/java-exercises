@@ -39,4 +39,5 @@ public class Song_17 {
 	public void setLyrics(SongLyrics_17 lyrics) {
 		this.lyrics = lyrics;
 	}
+	//
 }
