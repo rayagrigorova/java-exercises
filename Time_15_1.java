@@ -5,6 +5,7 @@ public class Time_15_1 {
 	private int minute;
 	private int second;
 	
+	//
 	Time_15_1(){
 		long current = System.currentTimeMillis();
 		setTime(current);
