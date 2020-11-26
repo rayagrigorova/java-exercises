@@ -54,5 +54,5 @@ public class Copy_17 {
 	public Album_17 getAlbum() {
 		return this.album;
 	}
-
+//
 }
