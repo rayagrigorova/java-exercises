@@ -84,5 +84,6 @@ public class RecordShopTest_17 {
 		//ultimate test
 		System.out.println(shop.getCDs().get(0).getAlbum().getArtist().getGenre().getCommonInstruments());
 	}
+	//
 
 }
