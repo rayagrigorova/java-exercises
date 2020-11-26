@@ -15,5 +15,5 @@ public class BMI_Test_15_2 {
 		System.out.println(p1.getBMI() + " " + p2.getBMI() + " " + p3.getBMI()
 						+ "\n" + p4.getBMI() + " " + p5.getBMI() + " " + p6.getBMI());
 	}
-
+//
 }
