@@ -7,8 +7,7 @@ public class Time_15_1 {
 	
 	//
 	Time_15_1(){
-		long current = System.currentTimeMillis();
-		setTime(current);
+		this(System.currentTimeMillis());
 	}
 	
 	Time_15_1(long ms){
