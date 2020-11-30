@@ -4,8 +4,7 @@ public class Time_15_1 {
 	private int hour;
 	private int minute;
 	private int second;
-	
-	//
+
 	Time_15_1(){
 		this(System.currentTimeMillis());
 	}
