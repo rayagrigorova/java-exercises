@@ -3,11 +3,10 @@ package OOP;
 import java.sql.Date;
 import java.util.ArrayList;
 
-public class Copy_17 {
+public class Copy_17 extends Album_17 {
 	private String format;
 	private String ISBN;
 	double price;
-	Album_17 album;
 	
 	
 	Copy_17(){
@@ -17,10 +16,11 @@ public class Copy_17 {
 	}
 	
 	Copy_17(String format, String ISBN,double price, Album_17 album ){
+		super(album.getArtist(), album.getReleaseDate(),album.getName()
+				,album.getGenre(),album.getLength(),album.getSongs());
 		this.format = format;
 		this.ISBN = ISBN;
 		this.price = price;
-		this.album = album;
 	}
 	
 	public void setFormat(String format) {
@@ -46,13 +46,5 @@ public class Copy_17 {
 	public double getPrice() {
 		return price;
 	}
-	
-	public void setAlbum(Album_17 album) {
-		this.album = album;
-	}
-	
-	public Album_17 getAlbum() {
-		return this.album;
-	}
-//
+
 }
