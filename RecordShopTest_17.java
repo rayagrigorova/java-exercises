@@ -70,11 +70,11 @@ public class RecordShopTest_17 {
 		
 		//copy
 		System.out.println(copySBG.getFormat() + " " + copySBG.getISBN() + 
-				" " + copySBG.getAlbum().getName() + " " + copySBG.getPrice());
+				" " + copySBG.getName() + " " + copySBG.getPrice());
 		
 		//store
 		System.out.println(shop.getName() + " " + shop.getAddress() +
-				" " + shop.getCDs().get(0).getAlbum().getName());
+				" " + shop.getCDs().get(0).getName());
 		
 		System.out.print("\n\n");
 		//connections
@@ -82,8 +82,7 @@ public class RecordShopTest_17 {
 				+ " " +  (death.getGenre()).getFirstArtist().getName());
 		
 		//ultimate test
-		System.out.println(shop.getCDs().get(0).getAlbum().getArtist().getGenre().getCommonInstruments());
+		System.out.println(shop.getCDs().get(0).getArtist().getGenre().getCommonInstruments());
 	}
-	//
 
 }
