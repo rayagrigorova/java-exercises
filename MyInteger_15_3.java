@@ -1,6 +1,23 @@
 package OOP;
 
 public class MyInteger_15_3 {
+//	Design a class named MyInteger . The class contains:
+//		An int data field named value that stores the int value represented by
+//		this object.
+//		A constructor that creates a MyInteger object for the specified int value.
+//		A getter method that returns the int value.
+//		The methods isEven() , isOdd() , and isPrime() that return true if the
+//		value in this object is even, odd, or prime, respectively.
+//		The static methods isEven(int) , isOdd(int) , and isPrime(int) that
+//		return true if the specified value is even, odd, or prime, respectively.
+//		The static methods isEven(MyInteger) , isOdd(MyInteger) , and
+//		isPrime(MyInteger) that return true if the specified value is even, odd,
+//		or prime, respectively.
+//		The methods equals(int) and equals(MyInteger) that return true if
+//		the value in this object is equal to the specified value.
+//		A static method parseInt(char[]) that converts an array of numeric
+//		characters to an int value.
+//		A static method parseInt(String) that converts a string into an int value.
 	
 	private int value;
 	
@@ -17,37 +34,30 @@ public class MyInteger_15_3 {
 //			value in this object is even, odd, or prime, respectively.
 
 	public boolean isEven() {
-		if (this.getValue() % 2 == 0) return true;
-		return false;
+		return (isEven(this.getValue()));
 	}
 	
 	public boolean isOdd() {
-		if(!isEven()) return true;
-		return false;
+		return(isOdd(this.getValue()));
 	}
 	
 	public boolean isPrime() {
-		for(int i = 2; i <= this.getValue() / 2; i++) {
-			if(this.getValue() % i ==0) return false;
-		}
-		return true;
+		return (isPrime(this.getValue()));
 	}
 	
 //	The static methods isEven(int) , isOdd(int) , and isPrime(int) that
 //	return true if the specified value is even, odd, or prime, respectively.
 	public static boolean isEven(int a) {
-		if (a % 2 == 0) return true;
-		return false;
+		return (a % 2 == 0);
 	}
 	
 	public static boolean isOdd(int a) {
-		if(!isEven(a)) return true;
-		return false;
+		return(!isEven(a));
 	}
 	
 	public static boolean isPrime(int a) {
 		for(int i = 2; i <= a / 2; i++) {
-			if(a % i ==0) return false;
+			if(a % i == 0) return false;
 		}
 		return true;
 	}
@@ -58,32 +68,25 @@ public class MyInteger_15_3 {
 //	or prime, respectively.
 
 	public static boolean isEven(MyInteger_15_3 a) {
-		if (a.getValue() % 2 == 0) return true;
-		return false;
+		return(isEven(a.getValue()));
 	}
 	
 	public static boolean isOdd(MyInteger_15_3 a) {
-		if(!isEven(a)) return true;
-		return false;
+		return(isOdd(a.getValue()));
 	}
 	
 	public static boolean isPrime(MyInteger_15_3 a) {
-		for(int i = 2; i <= a.getValue() / 2; i++) {
-			if(a.getValue() % i ==0) return false;
-		}
-		return true;
+		return(isPrime(a.getValue()));
 	}
 	
 //	The methods equals(int) and equals(MyInteger) that return true if
 //			the value in this object is equal to the specified value
 	
 	public boolean equals (int a) {
-		if(this.getValue() == a) return true;
-		return false;
+		return(this.getValue() == a);
 	}
 	public boolean equals(MyInteger_15_3 a) {
-		if(this.getValue() == a.getValue()) return true;
-		return false;
+		return(this.equals(a.getValue()));
 	}
 
 	
@@ -99,10 +102,6 @@ public class MyInteger_15_3 {
 	}
 	
 	public static int parseInt(String a) {
-		int ans = 0;
-		for(int i = 0; i < a.length(); i++) {
-			ans = ans * 10 + Character.getNumericValue(a.charAt(i));
-		}
-		return ans;
+		return parseInt(a.toCharArray());
 	}
 }
