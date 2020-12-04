@@ -22,19 +22,18 @@ public class RecordShopTest_17 {
 		death.setActiveFrom(1984);
 
 		
-		SongLyrics_17 infernalDeathLyr = new SongLyrics_17("Die, Die, Die", ""," Piling the bodies."
-						+ " Burn them in the night. Skin grows black and withered"
-						+ " Decayed smell will rise ", " Existence fading "
-						+ " Into ashes"
-						+ " Burn those bodies "
-						+ "To Infernal death", " ");
 
 		
 		Date SBG_release = new Date (548899200000L);
 		Album_17 screamBloodyGore = new Album_17(death, SBG_release, "Scream Bloody Gore", null, 37.51, SBG_songs );
 		deathAlbums.add(screamBloodyGore);
 		
-		Song_17 infernalDeath = new Song_17(2.53, "Infernal Death", infernalDeathLyr);
+		Song_17 infernalDeath = new Song_17(2.53, "Infernal Death", new SongLyrics_17("Die, Die, Die", ""," Piling the bodies."
+				+ " Burn them in the night. Skin grows black and withered"
+				+ " Decayed smell will rise ", " Existence fading "
+				+ " Into ashes"
+				+ " Burn those bodies "
+				+ "To Infernal death", " "));
 		SBG_songs.add(infernalDeath);
 		
 		Genre_17 deathMetal = new Genre_17("Death metal", death, metalInstruments, screamBloodyGore);
@@ -45,7 +44,7 @@ public class RecordShopTest_17 {
 		death.setActiveTo(2001);
 		
 		//lyrics 
-		System.out.println(infernalDeathLyr.getIntro() + " " + ((death.getGenre()).getFirstAlbum().getSongs()).get(0).getLyrics().getChorus());
+		System.out.println(death.getAlbums().get(0).getSongs().get(0).getLyrics().getIntro() + " " + ((death.getGenre()).getFirstAlbum().getSongs()).get(0).getLyrics().getChorus());
 		
 		//song
 		System.out.println(infernalDeath.getLength() + " " + infernalDeath.getTitle());
