@@ -52,15 +52,7 @@ another point with specified x - and y -coordinates.
 - A static method named distance that returns the distance from two MyPoint
 objects.
 
-  Draw the UML diagram for the class then implement the class. Write a test
-  program that creates the two points ( 0 , 0 ) and ( 10 , 30.5 ) and displays the dis-
-  tance between them.
-
-
-Draw the UML diagram for the class then implement the class. Write a test
-program that creates the two points ( 0 , 0 ) and ( 10 , 30.5 ) and displays the dis-
-tance between them.
-
+  Draw the UML diagram for the class then implement the class. Write a test program that creates the two points (0, 0) and (10, 30.5) and displays the distance between them.
 
 ## 16. Упражнение
 
